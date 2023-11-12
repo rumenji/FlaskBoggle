@@ -1,0 +1,39 @@
+table {
+    background-color: yellowgreen;
+    border-collapse: collapse;
+}
+td {
+    height: 100px;
+    width: 100px;
+    border: 1px solid;
+    
+    text-align: center;
+    vertical-align: middle;
+}
+
+#form {
+    margin-top: 10px;
+    padding: 20px;
+}
+
+#board {
+    padding: 20px;
+}
+
+.warning {
+    background-color: yellow;
+}
+
+.error {
+    background-color: red;
+}
+
+.success {
+    background-color: green;
+}
+
+p {
+    width: 30%;
+    text-align: center;
+    font-size: 30px;
+}

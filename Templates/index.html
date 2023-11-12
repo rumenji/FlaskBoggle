@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block title %}
+    Boggle
+{% endblock %}
+
+{% block content %}
+<div id="score-box">
+    <h2 id="score"></h2>
+    <h2 id="high_score">High Score: {{ high_score }}</h2>
+    <h2 id="played">Played: {{ played }}</h2>
+</div>
+<div id="board">
+    <table>
+    {% for row in session['board'] %}
+        <tr>
+            {% for letter in row %}
+                <td>
+                    {{ letter }}
+                </td>
+            {% endfor %}
+        </tr>
+    {% endfor %}
+    </table>
+</div>
+<div id="form">
+    <form id="guess-form" method="POST">
+        <input type="text" id="guess" name="guess">
+        <button type="submit" id="submit-guess">Submit guess</button>
+    </form>
+</div>
+{% endblock %}
